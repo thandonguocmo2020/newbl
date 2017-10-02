@@ -1,0 +1,32 @@
+<div class="row mt-15">
+    <div class="col-12">
+        <!-- Example Card Base -->
+        <ul class="blocks blocks-100 blocks-xxl-3 blocks-lg-3 blocks-md-2 " id="items" data-plugin="filterable" data-filters="#exampleFilter">
+            {{#post}}
+            <li data-type="animal">
+                <div class="card card-shadow">
+                    <figure class="card-img-top overlay-hover overlay">
+                        <h4 class="card-title thumb_view h5 text-white"><a href="{{host}}/t/{{ tags.0 }}">#{{ tags.0 }}</a></h4>
+                        <img class="overlay-figure overlay-scale post-img-t" src="{{img}}" alt="{{img}}">
+                        <figcaption class="overlay-panel overlay-background overlay-fade overlay-icon">
+                            <a class="icon wb-search" href="{{host}}/p/{{sid}}/{{slg}}" title="{{tl}}"></a>
+                        </figcaption>
+                    </figure>
+                    <div class="p-10 cb_footer">
+                        <a class="thumb_title" href="{{host}}/p/{{sid}}/{{slg}}" title="{{tl}}">
+                            <h4 class="card-title thumb-item-detail" id="title">
+                                {{tl}}
+                            </h4>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            {{/post}}
+        </ul>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <div id="load" class="text-center font-size-20 text-primary">Loading</div>
+    </div>
+</div>

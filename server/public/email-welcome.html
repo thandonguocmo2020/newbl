@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html class="no-js css-menubar" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui"> {{#meta}}
+  <!-- Home -->
+  <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <meta http-equiv="content-language" content="vi" />
+  <title>tiêu đề home</title>
+  <meta name="description" content="mô tả" />
+  <meta name="keywords" content="từ khóa" />
+  <meta name="robots" content="noodp,index,follow" />
+  <meta name='revisit-after' content='1 days' /> {{/meta}} {{^meta}}
+  <!-- meta page -->
+  <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <meta http-equiv="content-language" content="vi" />
+  <title>{{tl}}</title>
+  <meta name="description" content="{{desc}}" />
+  <meta name="keywords" content="{{tags}}" />
+  <meta name="robots" content="noodp,index,follow" />
+  <meta name='revisit-after' content='1 days' /> {{/meta}}
+  <link rel="apple-touch-icon" href="{{host}}/public/assets/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="{{host}}/public/assets/images/favicon.ico">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="{{host}}/public/global/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{host}}/public/global/css/bootstrap-extend.min.css">
+  <link rel="stylesheet" href="{{host}}/public/assets/css/site.min.css">
+  <link rel="stylesheet" href="{{host}}/public/assets/css/style.css">
+  <!-- Plugins -->
+  <!-- <link rel="stylesheet" href="{{host}}/public/global/vendor/animsition/animsition.css">
+    <link rel="stylesheet" href="{{host}}/public/global/vendor/asscrollable/asScrollable.css">
+    <link rel="stylesheet" href="{{host}}/public/global/vendor/switchery/switchery.css">
+    <link rel="stylesheet" href="{{host}}/public/global/vendor/intro-js/introjs.css">
+    <link rel="stylesheet" href="{{host}}/public/global/vendor/slidepanel/slidePanel.css"> -->
+  <link rel="stylesheet" href="{{host}}/public/global/vendor/flag-icon-css/flag-icon.css">
+  <link rel="stylesheet" href="{{host}}/public/assets/examples/css/pages/gallery.css">
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="{{host}}/public/global/fonts/web-icons/web-icons.min.css">
+  <link rel="stylesheet" href="{{host}}/public/global/fonts/brand-icons/brand-icons.min.css">
+  <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
+
+  <!--[if lt IE 9]>
+    <script src="{{host}}/public/global/vendor/html5shiv/html5shiv.min.js"></script>
+    <![endif]-->
+  <!--[if lt IE 10]>
+    <script src="{{host}}/public/global/vendor/media-match/media.match.min.js"></script>
+    <script src="{{host}}/public/global/vendor/respond/respond.min.js"></script>
+    <![endif]-->
+  <!-- Scripts -->
+</head>
+
+<body class="animsition page-email page-email-welcome">
+  <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+  <!-- Page -->
+  <div class="page">
+    <div class="page-content">
+      <!-- Panel -->
+      <div class="panel">
+        <div class="panel-body container-fluid">
+          <div class="email-title">
+        
+            <h4 class="blue-grey-400 font-weight-400">{{site}}</h4>
+          </div>
+          <div class="card welcome-content">
+            <div class="card-block pl-40 pr-40  mt-30 mb-30">
+              <h2>Welcome to {{site}} !</h2>
+              <p>
+                Thank you for signing ! We hope you enjoy your time with us.
+                Check out password.
+              </p>
+              <a class="btn btn-primary" href="{{host}}/reset-pwd/{{uid}}">My Account</a>
+            </div>
+          </div>
+          <!-- <div class="email-more">
+            <p>You are currently signed up to Company’s newsletters as: youremail@gmail.com
+              to <a class="email-unsubscribe" href="javascript:void(0)">unsubscribe</a></p>
+            <div class="email-more-social">
+              <a href="javascript:void(0)"><i class="icon bd-twitter" aria-hidden="true"></i></a>
+              <a href="javascript:void(0)"><i class="icon bd-facebook" aria-hidden="true"></i></a>
+              <a href="javascript:void(0)"><i class="icon bd-linkedin" aria-hidden="true"></i></a>
+              <a href="javascript:void(0)"><i class="icon bd-pinterest" aria-hidden="true"></i></a>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <!-- End Panel -->
+    </div>
+  </div>
+  <!-- End Page -->
+  <!-- Footer -->
+  <!-- <footer class="site-footer">
+    <div class="site-footer-legal">© 2017 <a href="{{host}}">{{site}}</a></div>
+    <div class="site-footer-right">
+      Crafted with <i class="red-600 wb wb-heart"></i> by <a href="{{host}}">{{site}}</a>
+    </div>
+  </footer> -->
+  <!-- Core  -->
+</body>
+
+</html>

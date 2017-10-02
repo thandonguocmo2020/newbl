@@ -1,0 +1,141 @@
+<div class="page-main">
+    <div class="page-content ">
+        <div class="row">
+            <div class="ccol-xs-12 col-md-8">
+                <div class="panel">
+                    {{#post}}
+                    <div class="panel-heading">
+                        <img src="{{img}}" class="post-img-detail" alt="{{tl}}" />
+                        <div class="bg-purple-100 p-10 blue-grey-700 block-title">
+
+                            <h1 class="h3 text-white title">{{tl}}</h1>
+                            <div class="p-5">
+
+                                <i class="icon wb-time"></i> <span id="date">{{at}}</span>
+
+                                <i class="icon wb-eye pl-20"></i> {{v}}
+
+                                <!-- <button type="button" data-target="#exampleNifty3dSign" data-toggle="modal" class="btn btn-icon btn-info btn-outline btn-round float-right mr-15">
+                                    <i class="icon wb-share" aria-hidden="true"></i>
+                                
+                                    </button> -->
+                            </div>
+
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade modal-3d-sign" id="exampleNifty3dSign" aria-hidden="true" aria-labelledby="exampleModalTitle" role="dialog"
+                            tabindex="-1">
+                            <div class="modal-dialog modal-simple">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">×</span>
+                                    </button>
+                                        <h4 class="modal-title">Share It !</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="example example-buttons">
+                                            <button type="button" class="btn btn-icon social-facebook"><i class="icon bd-facebook" aria-hidden="true"></i></button>
+                                            <button type="button" class="btn btn-icon social-twitter"><i class="icon bd-twitter" aria-hidden="true"></i></button>
+                                            <button type="button" class="btn btn-icon social-linkedin"><i class="icon bd-linkedin" aria-hidden="true"></i></button>
+                                            <button type="button" class="btn btn-icon social-dribbble"><i class="icon bd-dribbble" aria-hidden="true"></i></button>
+                                            <button type="button" class="btn btn-icon social-instagram"><i class="icon bd-instagram" aria-hidden="true"></i></button>
+                                            <button type="button" class="btn btn-icon social-github"><i class="icon bd-github" aria-hidden="true"></i></button>
+                                            <button type="button" class="btn btn-icon social-skype"><i class="icon bd-skype" aria-hidden="true"></i></button>
+                                            <button type="button" class="btn btn-icon social-youtube"><i class="icon bd-youtube" aria-hidden="true"></i></button>
+                                            <button type="button" class="btn btn-icon social-evernote"><i class="icon bd-evernote" aria-hidden="true"></i></button>
+                                            <button type="button" class="btn btn-icon social-google-plus"><i class="icon bd-google-plus" aria-hidden="true"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Modal -->
+                    </div>
+
+
+                    <div class="panel-body p-10">
+                        {{{htm}}}
+
+    
+                        {{#tags}}
+                        <button class="btn btn-sm btn-info btn-tags my-10"><a href="/t/{{.}}" title="{{tl}}" class="h4 text-default " target="_blank"> #{{.}} </a></button>      
+                       {{/tags}}
+                    </div>
+                    
+
+                    {{/post}}
+
+
+
+                    <!-- <h4 class="h4 p-10 text-primary">Suggest</h4>
+
+                    <ul class="list-group list-group-bordered">
+                        {{#suggest}}
+                        <li class="list-group-item item-suggest">
+                            <i class="icon wb-chevron-right-mini"></i> <a href="/p/{{sid}}" title="{{tl}}" class="font-size-14"
+                                target="_blank"> {{tl}} </a>
+                        </li>
+                        {{/suggest}}
+                    </ul> -->
+
+                  
+
+
+                    <div class="col-12">
+                        <div id="disqus_thread"></div>
+                        <script>
+                            /**
+                        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+                            /*
+                            var disqus_config = function () {
+                            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                            };
+                            */
+                            (function () { // DON'T EDIT BELOW THIS LINE
+                                var d = document, s = d.createElement('script');
+                                s.src = 'https://code-2.disqus.com/embed.js';
+                                s.setAttribute('data-timestamp', +new Date());
+                                (d.head || d.body).appendChild(s);
+                            })();
+                        </script>
+                        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="col-xs-12 col-md-4">
+
+                <ul class="blocks blocks-100 blocks-xxl-12 blocks-lg-12 blocks-md-12" data-plugin="filterable" data-filters="#exampleFilter">
+                    {{#suggest}}
+
+                    <li data-type="animal">
+                        <div class="card card-shadow">
+                            <h4 class="card-title thumb_view h5 text-white"><a href="/t/{{tags.0}}">#{{tags.0}} </a></h4>
+                            <figure class="card-img-top overlay-hover overlay">
+
+                                <img class="overlay-figure overlay-scale img-suggest-right" src="{{img}}" alt="{{tl}}">
+                                <figcaption class="overlay-panel overlay-background overlay-fade overlay-icon">
+                                    <a class="icon wb-search" href="{{host}}/p/{{sid}}/{{slg}}"></a>
+                                </figcaption>
+                            </figure>
+                            <div class="card-block">
+                                <a class="h4" href="{{host}}/p/{{sid}}/{{slg}}" title="{{tl}}">
+                                    <h4 class="thumb-item-detail title">{{tl}}</h4>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    {{/suggest}}
+
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>

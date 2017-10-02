@@ -1,0 +1,170 @@
+body {
+    background: #ebebeb;
+    padding-top: 0px;
+}
+
+.navbar-top {
+    border-radius: 0px;
+}
+
+.bg-black {
+    background-color: #222;
+}
+
+
+.container-1120 {
+    width: 1290px;
+}
+
+.thumb_view {position: absolute;
+    top: 0px;
+    background: #060;
+    display: inline-block;
+    padding: 4px 5px;
+    z-index: 1;
+    text-transform: uppercase;
+}
+
+.thumb_view a {
+
+    color: #ffffff !important;
+}
+
+.cb_footer{
+    min-height: 65px;
+}
+.text-white {
+    color: #fff !important;
+}
+
+.text-default {
+    color: #888 !important;
+}
+
+.panel  p  img {
+    width: 100%;
+}
+
+.footer {
+    background: #333;
+    color: #888;
+}
+
+.copyright {
+    background: #222;
+    color: #888;
+    padding: 20px 0;
+}
+
+.block-title {
+    background-color: rgb(0, 0, 0)!important;
+    color: #fff !important;
+}
+
+
+.thumb-item-detail {
+    font-family: Arial,Tahoma,Verdana,"Times New Roman","Helvetica Neue",Helvetica,sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+    letter-spacing: -0.02em;
+    font-weight: 600;
+    color: #245e90;
+    text-transform: capitalize;
+}
+
+.thumb-item-detail:hover {
+    color: #245e90;
+}
+
+
+#load {
+    font-size: 16px;
+}
+
+#load:hover {
+    cursor: pointer;
+    color: red !important;
+}
+
+
+.btn-tags:nth-child(1) {
+    margin-left: 5px;
+}
+
+.btn-tags a {
+    padding: 3px 8px;
+    margin-top: 5px;
+    border: 0px;
+    font-size: 14px;
+    font-weight: 100;
+    color: #ffffff !important;
+}
+
+.post-img-detail{
+    width: 100%;
+}
+
+.item-suggest {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+
+.footer {
+    background: #333 !important;
+}
+
+@media (min-width: 1200px) and (min-width: 768px){
+    .css-menubar .site-navbar .navbar-header {
+        width: 300px !important;
+    }
+}
+
+@media screen and (min-width: 960px) {
+
+    .page {
+        background: rgba(241, 244, 245, 0);
+    }
+  
+
+    .post-img-t{
+           width: 100%;
+            height: 200px;
+    }
+   
+    .post-img-detail{
+        width: 100%;
+        height: 420px;
+        display: inline-block;
+    }
+
+ 
+    .page-content {
+        padding-top: 15px !important;
+    }
+
+    .img-trend {
+        width: 68px !important;
+        height: 40px !important;
+    }
+   
+}
+
+@media screen and (min-width: 420px) and (max-width: 560px) {
+    .navbar-brand-logo {
+        margin: 12px;
+    }
+    .post-img-t{
+        width: 100%;
+        height: 200px !important;
+    }
+
+ 
+        .title {
+            font-size: 18px !important;
+        }
+
+        .img-trend {
+            width: 100% !important;
+        }
+}

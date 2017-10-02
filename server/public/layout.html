@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html class="no-js css-menubar" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta http-equiv="content-language" content="en" /> {{#meta}}
+    <!-- Home -->
+
+    <title>tiêu đề home</title>
+    <meta name="description" content="mô tả" />
+    <meta name="keywords" content="từ khóa" />
+    <meta name="robots" content="noodp,index,follow" />
+    <meta name='revisit-after' content='1 days' />
+     {{/meta}} 
+     {{^meta}} 
+     {{#post_meta}}
+    <!-- meta page -->
+    <title>{{tl}}</title>
+    <meta name="description" content="{{desc}}" />
+    <meta name="keywords" content="{{tags}}" />
+    <meta name="robots" content="noodp,index,follow" />
+    <meta name='revisit-after' content='1 days' />
+     {{/post_meta}} 
+    {{/meta}}
+    <link rel="apple-touch-icon" href="{{host}}/public/assets/images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="{{host}}/public/assets/images/favicon.ico">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="{{host}}/public/global/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{host}}/public/global/css/bootstrap-extend.min.css">
+    <link rel="stylesheet" href="{{host}}/public/assets/css/site.min.css">
+    <link rel="stylesheet" href="{{host}}/public/assets/css/style.css">
+    <!-- Plugins -->
+    <link rel="stylesheet" href="{{host}}/public/global/vendor/flag-icon-css/flag-icon.css">
+    <link rel="stylesheet" href="{{host}}/public/assets/examples/css/pages/gallery.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="{{host}}/public/global/fonts/web-icons/web-icons.min.css">
+    <link rel="stylesheet" href="{{host}}/public/global/fonts/brand-icons/brand-icons.min.css">
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
+
+    <!--[if lt IE 9]>
+    <script src="{{host}}/public/global/vendor/html5shiv/html5shiv.min.js"></script>
+    <![endif]-->
+    <!--[if lt IE 10]>
+    <script src="{{host}}/public/global/vendor/media-match/media.match.min.js"></script>
+    <script src="{{host}}/public/global/vendor/respond/respond.min.js"></script>
+    <![endif]-->
+    <!-- Scripts -->
+    <script src="{{host}}/public/global/vendor/breakpoints/breakpoints.js"></script>
+    <script>
+        Breakpoints();
+    </script>
+</head>
+
+<body class="animsition site-menubar-keep site-menubar-fold">
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+
+    <!-- Example Inverse -->
+    <div class="bg-black">
+        <div class="container">
+            <nav class="navbar  navbar-inverse navbar-top bg-black" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggler hamburger hamburger-close collapsed" data-target="#example-navbar-inverse-collapse"
+                            data-toggle="collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="hamburger-bar"></span>
+                              </button>
+                        <button type="button" class="navbar-toggler collapsed" data-target="#example-navbar-inverse-search" data-toggle="collapse">
+                                <span class="sr-only">Toggle Search</span>
+                                <i class="icon wb-search" aria-hidden="true"></i>
+                              </button>
+                        <a href="{{host}}" title="{{site}}">
+                                <img class="navbar-brand-logo m-20" src="https://codequs.com/logo.png" title="{{site}}" />
+                        </a>
+                    </div>
+                    <!-- <ul class="nav navbar-toolbar hidden-float">
+
+                        <li class="nav-item hidden-float">
+                            <a class="nav-link icon wb-search" data-toggle="collapse" href="#example-navbar-inverse-search" role="button">
+                                  <span class="sr-only">Toggle Search</span>
+                                </a>
+                        </li>
+                    </ul> -->
+                    <div class="collapse navbar-collapse navbar-collapse-toolbar" id="example-navbar-inverse-collapse">
+                        <ul class="nav navbar-toolbar navbar-right navbar-toolbar-right">
+                            <li class="nav-item dropdown">
+                                <a class="navbar-avatar btn btn-success btn-sm mr-10" data-toggle="dropdown" href="#" aria-expanded="false">
+                                            Register
+                                </a>
+                                <a class="navbar-avatar btn btn-primary btn-sm" data-toggle="dropdown" href="#" aria-expanded="false">
+                                    <span class="avatar avatar-online">
+                                        Login
+                                    </span>
+                                </a>
+
+
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- <div class="collapse navbar-search-overlap" id="example-navbar-inverse-search">
+                        <form role="search">
+                            <div class="form-group">
+                                <div class="input-search">
+                                    <i class="input-search-icon wb-search" aria-hidden="true"></i>
+                                    <input type="text" class="form-control" name="site-search" placeholder="Search...">
+                                    <button type="button" class="input-search-close icon wb-close" data-target="#example-navbar-inverse-search" data-toggle="collapse"
+                                        aria-label="Close"></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div> -->
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- End Example Inverse -->
+
+
+    <!-- Page -->
+    <div class="container">
+        <div class="page" style="margin-left: 0px;" id="search">
+            <!-- Page Content -->
+            {{>body }}
+            <!-- End Page Content -->
+        </div>
+    </div>
+
+    <!-- End Page -->
+    <!-- Footer -->
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 h5">
+                    <h3 class="h2 text-default">About</h3>
+                    <p class="text-default"> This is the best destination to find the best online coupon codes and unbeatable savings for thousands
+                        of stores!
+                    </p>
+                </div>
+
+                <div class="col-lg-4">
+                    <h3 class="h2 text-default">Trending</h3>
+
+                    <div class="row" id="trend">
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <h3 class="h2 text-default">Follow Us</h3>
+
+                    <form class="ajax" id="subsribe" method="POST">
+                        <div class="form-group">
+                            Get weekly updates on new courses via email.
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="email" name="mail" id="mail" placeholder="yourmail@domain.com" class="form-control">
+                                <span class="input-group-btn"><button class="btn btn-primary" type="submit">Subscribe</button></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="ssk-group ssk-rounded">
+                                <a class="ssk ssk-facebook" href=""></a>
+                                <a class="ssk ssk-twitter" href=""></a>
+                                <a class="ssk ssk-google-plus" href=""></a>
+                                <a class="ssk ssk-pinterest" href=""></a>
+                                <a class="ssk ssk-tumblr" href=""></a>
+                                <a class="ssk ssk-email" href=""></a>
+                            </div>
+                        </div>
+
+                    </form>
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="copyright">
+            <div class="container">
+                © 2016 <a class="vglnk" href="#" rel="nofollow">
+                    website.com
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <!-- Core  -->
+    <script src="{{host}}/public/global/vendor/babel-external-helpers/babel-external-helpers.js"></script>
+    <script src="{{host}}/public/global/vendor/jquery/jquery.js"></script>
+    <script src="{{host}}/public/global/vendor/tether/tether.js"></script>
+    <script src="{{host}}/public/global/vendor/bootstrap/bootstrap.js"></script>
+    <script src="{{host}}/public/global/vendor/animsition/animsition.js"></script>
+    <script src="{{host}}/public/global/vendor/mousewheel/jquery.mousewheel.js"></script>
+    <script src="{{host}}/public/global/vendor/asscrollbar/jquery-asScrollbar.js"></script>
+    <script src="{{host}}/public/global/vendor/asscrollable/jquery-asScrollable.js"></script>
+    <script src="{{host}}/public/global/vendor/ashoverscroll/jquery-asHoverScroll.js"></script>
+    <!-- Plugins -->
+
+    <script src="{{host}}/public/global/vendor/screenfull/screenfull.js"></script>
+
+    <!-- Scripts -->
+    <script src="{{host}}/public/global/js/State.js"></script>
+    <script src="{{host}}/public/global/js/Component.js"></script>
+    <script src="{{host}}/public/global/js/Plugin.js"></script>
+    <script src="{{host}}/public/global/js/Base.js"></script>
+    <script src="{{host}}/public/global/js/Config.js"></script>
+    <script src="{{host}}/public/assets/js/Section/Menubar.js"></script>
+    <script src="{{host}}/public/assets/js/Section/GridMenu.js"></script>
+    <script src="{{host}}/public/assets/js/Section/Sidebar.js"></script>
+    <script>
+        Config.set('assets', '{{host}}/public/assets');
+    </script>
+    <!-- Page -->
+    <script src="{{host}}/public/assets/js/Site.js"></script>
+    <script src="{{host}}/public/global/js/Plugin/asscrollable.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <!-- <script src="{{host}}/public/global/js/Plugin/slidepanel.js"></script>
+    <script src="{{host}}/public/global/js/Plugin/switchery.js"></script> -->
+    <script>
+        {{#maxPages }}
+        var maxPages = {{ maxPages }};
+        {{/maxPages}}
+    </script>
+    <script src="{{host}}/public/assets/js/paging.js"></script>
+</body>
+
+</html>

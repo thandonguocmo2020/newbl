@@ -1,0 +1,24 @@
+<div class="page-content container-fluid">
+    <!-- Example Card Base -->
+    <h4>Search restful</h4>
+    <ul class="blocks blocks-100 blocks-xxl-3 blocks-lg-3 blocks-md-2 " id="items" data-plugin="filterable" data-filters="#exampleFilter">
+        {{#post}}
+        <li data-type="animal">
+            <div class="card card-shadow">
+                <figure class="card-img-top overlay-hover overlay">
+                    <h4 class="card-title p-5 thumb_view"><a href="{{host}}/t/{{ tags.0 }}">#{{ tags.0 }}</a></h4>
+                    <img class="overlay-figure overlay-scale" src="{{img}}" alt="{{img}}">
+                    <figcaption class="overlay-panel overlay-background overlay-fade overlay-icon">
+                        <a class="icon wb-search" href="{{host}}/p/{{sid}}" title="{{tl}}"></a>
+                    </figcaption>
+                </figure>
+                <div class="card-block cb_footer">
+                    <a class="thumb_title" href="{{host}}/p/{{sid}}" title="{{tl}}">
+                        <h4 class="card-title">{{tl}} </h4>
+                    </a>
+                </div>
+            </div>
+        </li>
+        {{/post}}
+    </ul>
+</div>
