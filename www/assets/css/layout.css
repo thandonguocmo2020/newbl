@@ -1,0 +1,30 @@
+@import url('./bootstrap.min.css');
+@import url('./bootstrap-extend.min.css');
+@import url('./site.min.css');
+@import url('./login-v3.min.css');
+@import url('./register-v3.min.css');
+@import url('./botstrap-table/bootstrap-table.min.css');
+@import url('./modals.css');
+
+@import url('./flag-icon-css/flag-icon.min.css');
+@import url('./font-awesome/font-awesome.min.css');
+@import url('./web-icons/web-icons.min.css');
+
+/* body {
+    margin : 0px;
+    padding: 0px;
+  } */
+
+
+  .page-forgot-password {
+    background-color: #f3f7f9;
+  }
+  
+  .page-forgot-password p {
+    color: #a3afb7;
+  }
+  
+  .page-forgot-password form {
+    width: 250px;
+    margin: 30px auto;
+  }

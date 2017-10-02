@@ -1,0 +1,12 @@
+export const AUTH_REGISTER = 'AUTH_REGISTER'
+export const AUTH_LOGIN = 'AUTH_LOGIN'
+export const MEMBER_INFO = 'MEMBER_INFO'
+export const MEMBER_UPDATE = 'MEMBER_UPDATE'
+export const MEMBER_UPDATE_PASSWORD = 'MEMBER_UPDATE_PASSWORD'
+
+export const POST_CREATE = 'POST_CREATE'
+export const FETCH_POST = 'FETCH_POST'
+export const UPDATE_POST = 'UPDATE_POST'
+export const POST_DELETE = 'POST_DELETE'
+export const POST_DELETE_MU = 'POST_DELETE_MU'
+export const FETCH_POST_BY_TAG = 'FETCH_POST_BY_TAG'
