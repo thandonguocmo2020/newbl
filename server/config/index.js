@@ -3,8 +3,8 @@
 
 // Set the 'development' environment configuration object
 module.exports = {
-    // host: 'http://45.32.19.230',
-    host: 'http://localhost:4000',
+    host: 'http://45.32.19.230', // domain
+    // host: 'http://localhost:4000',
     site: {
         favicon: "https://encrypted-tbn0.gstatic.com/images",
         name: "website.com",
