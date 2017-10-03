@@ -6,25 +6,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    <meta http-equiv="content-language" content="en" /> {{#meta}}
+    <meta http-equiv="content-language" content="en" /> 
     <!-- Home -->
-
-    <title>tiêu đề home</title>
-    <meta name="description" content="mô tả" />
-    <meta name="keywords" content="từ khóa" />
-    <meta name="robots" content="noodp,index,follow" />
+    {{#meta_home}}
+    <!-- Home -->
+    <link href="{{favicon}}" rel="shortcut icon" type="image/x-icon" />
+    <title>{{title}}</title>
+    <meta name="robots" content="index,follow" />
     <meta name='revisit-after' content='1 days' />
-     {{/meta}} 
-     {{^meta}} 
-     {{#post_meta}}
-    <!-- meta page -->
-    <title>{{tl}}</title>
+    <meta name="author" content="{{auth}}" />
+    <meta name="generator" content="{{name}}" />
     <meta name="description" content="{{desc}}" />
-    <meta name="keywords" content="{{tags}}" />
-    <meta name="robots" content="noodp,index,follow" />
-    <meta name='revisit-after' content='1 days' />
-     {{/post_meta}} 
-    {{/meta}}
+    <meta name="keywords" content="{{keyword}}" />
+     {{/meta_home}} 
+     {{^meta_home}} 
+     {{#post}}
+   <!-- meta page -->
+   <title>{{tl}}</title>
+   
+       <meta name="robots" content="index,follow" />
+       <meta name='revisit-after' content='1 days' />
+       <meta name="author" content="{{site}}" />
+       <meta name="generator" content="{{site}}" />
+   
+       <meta name="keywords" content="{{tags}}" />
+       <meta name="description" content="{{desc}}" />
+   
+       <meta property="og:type" content="article" />
+       <meta property="og:title" content="{{tl}}" />
+       <meta property="og:url" content="{{host}}/p/{{sid}}/{{slg}}" />
+       <meta property="og:description" content="{{desc}}" />
+       <meta property="og:image" content="{{img}}" />
+       <meta property="og:site_name" content="{{site}}" />
+   
+       <!-- <meta property="article:publisher" content="https://www.facebook.com/codequs" />
+       <meta property="article:author" content="https://www.facebook.com/codequs" /> -->
+   
+       <meta name="twitter:title" content="{{tl}}" />
+       <meta name="twitter:url" content="{{host}}/p/{{sid}}" />
+       <meta name="twitter:description" content="{{dsc}}" />
+       <meta name="twitter:image" content="{{img}}" />
+   
+       <meta itemprop="name" content="{{tl}}" />
+       <meta itemprop="url" content="{{host}}/p/{{sid}}" />
+       <meta itemprop="description" content="{{dsc}}" />
+       <meta itemprop="image" content="{{img}}" />
+     {{/post}} 
+    {{/meta_home}}
     <link rel="apple-touch-icon" href="{{host}}/public/assets/images/apple-touch-icon.png">
     <link rel="shortcut icon" href="{{host}}/public/assets/images/favicon.ico">
     <!-- Stylesheets -->
@@ -60,7 +88,6 @@
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-
     <!-- Example Inverse -->
     <div class="bg-black">
         <div class="container">
@@ -76,8 +103,8 @@
                                 <span class="sr-only">Toggle Search</span>
                                 <i class="icon wb-search" aria-hidden="true"></i>
                               </button>
-                        <a href="{{host}}" title="{{site}}">
-                                <img class="navbar-brand-logo m-20" src="https://codequs.com/logo.png" title="{{site}}" />
+                        <a href="{{host}}" title="{{site.name}}">
+                                <img class="navbar-brand-logo m-20" src="https://codequs.com/logo.png" title="{{site.name}}" />
                         </a>
                     </div>
                     <!-- <ul class="nav navbar-toolbar hidden-float">
@@ -170,20 +197,7 @@
                             </div>
                         </div>
 
-                        <div class="form-group">
-                            <div class="ssk-group ssk-rounded">
-                                <a class="ssk ssk-facebook" href=""></a>
-                                <a class="ssk ssk-twitter" href=""></a>
-                                <a class="ssk ssk-google-plus" href=""></a>
-                                <a class="ssk ssk-pinterest" href=""></a>
-                                <a class="ssk ssk-tumblr" href=""></a>
-                                <a class="ssk ssk-email" href=""></a>
-                            </div>
-                        </div>
-
                     </form>
-
-
                 </div>
 
             </div>
@@ -204,32 +218,14 @@
     <script src="{{host}}/public/global/vendor/tether/tether.js"></script>
     <script src="{{host}}/public/global/vendor/bootstrap/bootstrap.js"></script>
     <script src="{{host}}/public/global/vendor/animsition/animsition.js"></script>
-    <script src="{{host}}/public/global/vendor/mousewheel/jquery.mousewheel.js"></script>
+    <!-- <script src="{{host}}/public/global/vendor/mousewheel/jquery.mousewheel.js"></script>
     <script src="{{host}}/public/global/vendor/asscrollbar/jquery-asScrollbar.js"></script>
     <script src="{{host}}/public/global/vendor/asscrollable/jquery-asScrollable.js"></script>
     <script src="{{host}}/public/global/vendor/ashoverscroll/jquery-asHoverScroll.js"></script>
+     -->
     <!-- Plugins -->
-
-    <script src="{{host}}/public/global/vendor/screenfull/screenfull.js"></script>
-
-    <!-- Scripts -->
-    <script src="{{host}}/public/global/js/State.js"></script>
-    <script src="{{host}}/public/global/js/Component.js"></script>
-    <script src="{{host}}/public/global/js/Plugin.js"></script>
-    <script src="{{host}}/public/global/js/Base.js"></script>
-    <script src="{{host}}/public/global/js/Config.js"></script>
-    <script src="{{host}}/public/assets/js/Section/Menubar.js"></script>
-    <script src="{{host}}/public/assets/js/Section/GridMenu.js"></script>
-    <script src="{{host}}/public/assets/js/Section/Sidebar.js"></script>
-    <script>
-        Config.set('assets', '{{host}}/public/assets');
-    </script>
-    <!-- Page -->
-    <script src="{{host}}/public/assets/js/Site.js"></script>
-    <script src="{{host}}/public/global/js/Plugin/asscrollable.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
-    <!-- <script src="{{host}}/public/global/js/Plugin/slidepanel.js"></script>
-    <script src="{{host}}/public/global/js/Plugin/switchery.js"></script> -->
+
     <script>
         {{#maxPages }}
         var maxPages = {{ maxPages }};

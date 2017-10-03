@@ -11,6 +11,10 @@ body {
     background-color: #222;
 }
 
+#example-navbar-inverse-collapse {
+    border: 0px !important;
+    padding-bottom: 10px;
+}
 
 .container-1120 {
     width: 1290px;

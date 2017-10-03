@@ -3,8 +3,17 @@
 
 // Set the 'development' environment configuration object
 module.exports = {
-    host: 'http://45.32.19.230',
-    site: 'WEBSITE.COM',
+    // host: 'http://45.32.19.230',
+    host: 'http://localhost:4000',
+    site: {
+        favicon: "https://encrypted-tbn0.gstatic.com/images",
+        name: "website.com",
+        logo: "https://codequs.com/logo.png",
+        auth: "website.com",
+        title: "website.com",
+        desc: "website.com",
+        keyword: "website.com"
+    },
     port: {
         www: 3000
     },

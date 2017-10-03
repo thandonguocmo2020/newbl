@@ -6,12 +6,16 @@
             <li data-type="animal">
                 <div class="card card-shadow">
                     <figure class="card-img-top overlay-hover overlay">
+
                         <h4 class="card-title thumb_view h5 text-white"><a href="{{host}}/t/{{ tags.0 }}">#{{ tags.0 }}</a></h4>
                         <img class="overlay-figure overlay-scale post-img-t" src="{{img}}" alt="{{img}}">
-                        <figcaption class="overlay-panel overlay-background overlay-fade overlay-icon">
-                            <a class="icon wb-search" href="{{host}}/p/{{sid}}/{{slg}}" title="{{tl}}"></a>
-                        </figcaption>
+                        <a href="{{host}}/p/{{sid}}/{{slg}}" title="{{tl}}">
+                            <figcaption class="overlay-panel overlay-background overlay-fade overlay-icon">
+                                <i class="icon wb-search"></i>
+                            </figcaption>
+                        </a>
                     </figure>
+
                     <div class="p-10 cb_footer">
                         <a class="thumb_title" href="{{host}}/p/{{sid}}/{{slg}}" title="{{tl}}">
                             <h4 class="card-title thumb-item-detail" id="title">

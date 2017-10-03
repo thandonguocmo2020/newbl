@@ -55,11 +55,9 @@ module.exports = [
                                     // tags: doc.tags,
                                     suggest: suggest,
                                     aside: post_right,
-                                    post_meta: {
-                                        tl: doc.tl,
-                                        desc: doc.desc,
-                                        keyword: doc.tags.join(',')
-                                    }
+                                    // post_meta: doc,
+                                    // tags: doc.tags,
+                                    keyword: doc.tags.join(',')
                                 }
 
                                 console.log(post_right);

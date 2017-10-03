@@ -53,14 +53,13 @@
                         <!-- End Modal -->
                     </div>
 
-
                     <div class="panel-body p-10">
                         {{{htm}}}
-
-    
-                        {{#tags}}
-                        <button class="btn btn-sm btn-info btn-tags my-10"><a href="/t/{{.}}" title="{{tl}}" class="h4 text-default " target="_blank"> #{{.}} </a></button>      
-                       {{/tags}}
+                        <div>
+                            {{#tags}}
+                            <button class="btn btn-sm btn-info btn-tags my-10"><a href="/t/{{.}}" title="{{tl}}" class="h4 text-default " target="_blank"> #{{.}} </a></button>      
+                           {{/tags}}
+                        </div>
                     </div>
                     
 

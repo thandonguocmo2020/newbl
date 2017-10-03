@@ -38,7 +38,7 @@ module.exports = _.concat([
 
                 var partials = {
                     host: config.host,
-                    site: config.site,
+                    meta_home: config.site,
                     body: fs.readFileSync('./public/home.html').toString()
                 }
 
@@ -65,7 +65,7 @@ module.exports = _.concat([
 
                         let data = {
                             host: config.host,
-                            site: config.site,
+                            meta_home: config.site,
                             post: items.slice(0, itemsPerPage),
                             maxPages: maxPages
 
@@ -198,7 +198,7 @@ module.exports = _.concat([
 
                     let data = {
                         host: config.host,
-                        site: config.site,
+                        site: config.site.name,
                         post: items.slice(0, itemsPerPage),
                         maxPages: maxPages
                     }
